@@ -3,6 +3,7 @@ import { Link , useParams} from "react-router-dom";
 
 function Detalle() {
     return (
+
         <div>
             <p>Detalle</p>
             <ul>

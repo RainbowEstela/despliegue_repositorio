@@ -2,7 +2,7 @@ import React from "react";
 import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
 
-function Home() {
+function Gatos() {
     return (
         <div>
             <Header></Header>
@@ -16,4 +16,4 @@ function Home() {
         </div>
     );
 }
-export default Home;
+export default Gatos;
