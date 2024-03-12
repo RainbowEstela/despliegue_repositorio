@@ -3,6 +3,9 @@ import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
 
 function Perros() {
+    document.title = "Refugio second chance - adoptar perros Almería"
+    document.querySelector("meta[name='description']").content="Aquí podrá adoptar perros en Almería, tenemos un listado de nuestos perros en busca de una nueva familia.";
+
     return (
         <div>
             <Header></Header>

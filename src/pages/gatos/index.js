@@ -3,6 +3,10 @@ import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
 
 function Gatos() {
+    document.title = "Refugio second chance - adoptar gatos Almería"// titulo posicionado por las palabras clave
+    // titulo posicionado por adoptar gatos en almeria
+    document.querySelector("meta[name='description']").content="Aquí podrá adoptar gatos en Almería, tenemos un listado de nuestos gatos en busca de una nueva familia.";
+
     return (
         <div>
             <Header></Header>

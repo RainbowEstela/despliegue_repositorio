@@ -13,8 +13,8 @@ export const Header = _=>
 
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <EnlaceNav link={'/'}>Inicio</EnlaceNav>
-        <EnlaceNav link={'/gatos'}>Gatos</EnlaceNav>
-        <EnlaceNav link={'/perros'}>Perros</EnlaceNav>
+        <EnlaceNav link={'/adoptar-gato-almeria'}>Gatos</EnlaceNav>
+        <EnlaceNav link={'/adoptar-perro-almeria'}>Perros</EnlaceNav>
         </nav>  
     </div>
 </header>

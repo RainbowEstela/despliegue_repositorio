@@ -3,6 +3,9 @@ import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
 
 function Home() {
+    document.title = "Refugio second chance - home"// titulo posicionado por marca
+    // meta descripción usando las palabras clave de la url home
+    document.querySelector("meta[name='description']").content="Second Chance es un refugio animal en Almería que intenta ser temporalmente el hogar de animales abandonados en busca de un nuevo amigo.";
     return (
         <div>
             <Header></Header>
