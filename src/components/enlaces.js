@@ -1,6 +1,7 @@
 import React from "react";
 import { Link , useParams, useLocation} from "react-router-dom";
 
+
 export const EnlaceHeader = ({link,children}) => <Link to={link} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">{children}</Link>
 export function EnlaceNav ({link,children}) {
     const location = useLocation();
