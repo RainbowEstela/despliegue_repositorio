@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const BreadContainer = ({children}) =>
-<nav class="py-4 px-4 border-b-2">
+<nav class="py-4 px-4 border-b-2 bg-white">
 <ul class="flex items-center">
     <li class="flex items-center">
     <Link to="/" class="flex items-center gap-1 hover:text-rose-600 me-2">

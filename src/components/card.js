@@ -18,14 +18,14 @@ export const Card = ({tipo,hora,descripcion,nombre,imagen,children,url,alt}) =>
 </div>
 
 
-export const Hero = ({imagen,nombre,fecha,hora,descripcion,children}) => 
+export const Hero = ({imagen,nombre,tipo,descripcion,children,alt,url}) => 
 <section className="text-gray-600 body-font overflow-hidden">
     <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap xl:items-center">
-            <img src={imagen} alt="detalle" className="lg:w-1/2 w-full lg:h-auto xl:max-h-96 h-64 object-cover object-center rounded"></img>
+            <img src={imagen} alt={alt} className="lg:w-1/2 w-full lg:h-auto xl:max-h-96 h-64 object-cover object-center rounded"></img>
 
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mb-0">
-                <h2 className="text-sm title-font tracking-widest text-blue-500">{fecha} <span>{hora}</span></h2>
+                <h2 className="text-sm title-font tracking-widest text-blue-500">{tipo}</h2>
                 <Titulo>{nombre}</Titulo>
                 <p className="leading-relaxed mb-4 text-gray-900">{descripcion}</p>
 
@@ -36,7 +36,7 @@ export const Hero = ({imagen,nombre,fecha,hora,descripcion,children}) =>
                 <div className="flex">
                    
                     <div className="ml-auto">
-                        <Link to={`/`}><BotonMarron>Volver</BotonMarron></Link>
+                        <Link to={url}><BotonMarron>Volver</BotonMarron></Link>
                     </div>
                 </div>
             </div>
@@ -47,5 +47,5 @@ export const Hero = ({imagen,nombre,fecha,hora,descripcion,children}) =>
 export const HeroSection = ({dato,valor}) =>
 <div className="flex border-t border-gray-200 py-2">
     <span className="text-gray-900">{dato}</span>
-    <span className="ml-auto text-blue-500">{valor}</span>
+    <span className="ml-auto text-amber-600">{valor}</span>
 </div>
