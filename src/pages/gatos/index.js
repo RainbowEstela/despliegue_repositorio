@@ -1,6 +1,7 @@
 import React from "react";
 import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
+import { BreadContainer, BreadDesactive } from "../../components/breadcrumb";
 
 function Gatos() {
     document.title = "Refugio second chance - adoptar gatos Almería"// titulo posicionado por las palabras clave
@@ -10,13 +11,11 @@ function Gatos() {
     return (
         <div>
             <Header></Header>
-
+            <BreadContainer>
+                <BreadDesactive>gatos</BreadDesactive>
+            </BreadContainer>
             <p>Pagina Inicio</p>
-            <ul>
-                <li><Link to={'/'}>inicio</Link></li>
-                <li><Link to={'/formulario'}>Formaulario</Link></li>
-                <li><Link to={'/detalle'}>detalle</Link></li>
-            </ul>
+            
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link , useParams} from "react-router-dom";
 import { Header } from "../../components/header";
+import { BreadContainer } from "../../components/breadcrumb";
 
 function Home() {
     document.title = "Refugio second chance - home"// titulo posicionado por marca
@@ -9,6 +10,7 @@ function Home() {
     return (
         <div>
             <Header></Header>
+            <BreadContainer></BreadContainer>
 
             <p>Pagina Inicio</p>
             <ul>
